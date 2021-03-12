@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLJatko", "SQLJatko.csproj", "{C07F0B7E-C0AC-4730-9D07-8DB595B2A7EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C07F0B7E-C0AC-4730-9D07-8DB595B2A7EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C07F0B7E-C0AC-4730-9D07-8DB595B2A7EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C07F0B7E-C0AC-4730-9D07-8DB595B2A7EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C07F0B7E-C0AC-4730-9D07-8DB595B2A7EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DE4C379-D8A6-4B1B-89C7-B13FA92622F0}
+	EndGlobalSection
+EndGlobal
