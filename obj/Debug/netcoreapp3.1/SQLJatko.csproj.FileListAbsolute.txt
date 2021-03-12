@@ -381,3 +381,5 @@ D:\Projektit2021\SQLJatko\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Micros
 D:\Projektit2021\SQLJatko\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 D:\Projektit2021\SQLJatko\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Projektit2021\SQLJatko\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Projektit2021\SQLJatko\obj\Debug\netcoreapp3.1\Razor\Views\Koti\Luo.cshtml.g.cs
+D:\Projektit2021\SQLJatko\obj\Debug\netcoreapp3.1\Razor\Views\Koti\Success.cshtml.g.cs

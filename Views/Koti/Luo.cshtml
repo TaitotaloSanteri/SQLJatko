@@ -1,0 +1,31 @@
+﻿@model SQLJatko.Models.Game
+
+<h1>Lisää uusi peli tietokantaan</h1>
+
+<form method="post" asp-action="Luo">
+    
+    <label asp-for="GameName"></label>
+    <input asp-for="GameName" />
+    <span asp-validation-for="GameName" class="text-danger"></span>
+    <br />
+
+    <label asp-for="ReleaseYear"></label>
+    <input asp-for="ReleaseYear" />
+    <span asp-validation-for="ReleaseYear" class="text-danger"></span>
+    <br />
+    
+    <label asp-for="Description"></label>
+    <textarea asp-for="Description"></textarea>
+    <span asp-validation-for="Description" class="text-danger"></span>
+    <br />
+    
+    <label asp-for="GameGenre"></label>
+    <select asp-for="GameGenre" asp-items="Html.GetEnumSelectList<Genre>()"></select>
+    <span asp-validation-for="GameGenre" class="text-danger"></span>
+    <br />
+    
+    <label asp-for="GamePlatform"></label>
+    <select asp-for="GamePlatform" asp-items="Html.GetEnumSelectList<Platform>()"></select>
+    <span asp-validation-for="GamePlatform" class="text-danger"></span>
+    <button type="submit">Lisää</button>
+</form>

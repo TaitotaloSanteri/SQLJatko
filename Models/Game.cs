@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,10 +12,18 @@ namespace SQLJatko.Models
     {
         [Key]
         public int Id { get; set; }
+        [DisplayName("Game name")]
         public string GameName { get; set; }
+        
+        [DisplayName("Release year")]
         public int ReleaseYear { get; set; }
+
         public string Description { get; set; }
+
+        [DisplayName("Game genre")]
         public Genre GameGenre { get; set; }
+
+        [DisplayName("Game platform")]
         public Platform GamePlatform { get; set; }
     }
 
@@ -24,12 +33,15 @@ namespace SQLJatko.Models
         Strategy,
         RPG
     }
+
     public enum Platform
     {
         PC,
         PS5,
         PS4,
+        [Display(Name ="Xbox One")]
         XboxOne,
+        [Display(Name = "Xbox 360")]
         Xbox360
     }
 

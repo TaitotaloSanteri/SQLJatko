@@ -1,1 +1,8 @@
-﻿<h1>Tämä on Index-sivu</h1>
+﻿@model List<SQLJatko.Models.Game>
+
+<h1>Pelit</h1>
+@foreach (Game game in Model)
+{
+    <p>@game.GameName @game.ReleaseYear @game.Description @game.GameGenre @game.GamePlatform </p>
+    <br />
+}
