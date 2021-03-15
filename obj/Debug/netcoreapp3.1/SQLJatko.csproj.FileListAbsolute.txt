@@ -768,3 +768,5 @@ C:\Projektit\SQLJatko\obj\Debug\netcoreapp3.1\SQLJatko.csproj.CopyComplete
 C:\Projektit\SQLJatko\obj\Debug\netcoreapp3.1\SQLJatko.dll
 C:\Projektit\SQLJatko\obj\Debug\netcoreapp3.1\SQLJatko.pdb
 C:\Projektit\SQLJatko\obj\Debug\netcoreapp3.1\SQLJatko.genruntimeconfig.cache
+C:\Projektit\SQLJatko\obj\Debug\netcoreapp3.1\Razor\Views\Koti\Delete.cshtml.g.cs
+C:\Projektit\SQLJatko\obj\Debug\netcoreapp3.1\Razor\Views\Koti\Update.cshtml.g.cs

@@ -32,7 +32,6 @@ namespace SQLJatko.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("GameName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("GamePlatform")

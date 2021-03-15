@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace SQLJatko.Models
 {
-
     public class Game
     {
         [Key]

@@ -9,8 +9,8 @@ using SQLJatko.Data;
 namespace SQLJatko.Migrations
 {
     [DbContext(typeof(SQLJatkoDb))]
-    [Migration("20210312085203_Games")]
-    partial class Games
+    [Migration("20210315103559_Game")]
+    partial class Game
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

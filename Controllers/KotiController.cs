@@ -26,12 +26,14 @@ namespace SQLJatko.Controllers
         {
             List<Game> games = db.Games.ToList();
             return View(games);
+            // return Views/Koti/Index.cshtml
         }
 
         [HttpGet]
         public IActionResult Luo()
         {
             return View();
+            // return Views/Koti/Luo.cshtml
         }
 
         [HttpPost]
@@ -77,12 +79,48 @@ namespace SQLJatko.Controllers
         }
 
         [HttpGet]
+        public IActionResult Update(int id)
+        {
+            Game gameToUpdate = db.Games.Find(id);
+            return View(gameToUpdate);
+            //return Views/Koti/Update.cshtml
+        }
+
+        [HttpGet]
         public IActionResult Delete(int id)
+        {
+            Game gameToDelete = db.Games.Find(id);
+            return View(gameToDelete);
+            //return Views/Koti/Delete.cshtml
+        }
+
+        [HttpGet]
+        public IActionResult DeletePost(int id)
         {
             Game gameToDelete = db.Games.Find(id);
             db.Games.Remove(gameToDelete);
             db.SaveChanges();
-            return View("Success");
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public IActionResult DeleteAll()
+        {
+            IEnumerable<Game> games = db.Games;
+            foreach (Game game in games)
+            {
+                db.Games.Remove(game);
+            }
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public IActionResult UpdatePost(Game gameToUpdate)
+        {
+            db.Games.Update(gameToUpdate);
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
 
     }

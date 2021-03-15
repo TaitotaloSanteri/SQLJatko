@@ -1,0 +1,9 @@
+﻿@model SQLJatko.Models.Game
+<h1>Pelin poisto</h1>
+<p>@Model.GameName</p>
+<p>@Model.ReleaseYear</p>
+<p>@Model.Description</p>
+<p>Haluatko varmasti tuhota tämän pelin tietokannasta?</p>
+<a asp-action="DeletePost" asp-route-Id=@Model.Id class="btn btn-danger">Tuhoa</a>
+<a asp-action="Index" class="btn">Takaisin</a> 
+   

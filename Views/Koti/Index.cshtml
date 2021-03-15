@@ -1,5 +1,7 @@
 ﻿@model List<SQLJatko.Models.Game>
 
+@if (Model.Count > 0)
+{
 <h1>Pelit</h1>
 <table id="sql-table">
     <tr id="sql-table-header">
@@ -22,7 +24,14 @@
     </tr>
     }
 </table>
+}
+else {
+<h3>Pelejä ei löytynyt tietokannasta.</h3>
+} 
 
+<br />
+    <a asp-action="DeleteAll" class="btn btn-danger">DELETE ALL</a>
+<br />
 
 
 <h2>Tietojen suodatus</h2>
