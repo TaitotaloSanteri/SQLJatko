@@ -11,10 +11,10 @@
 #sql-table-entry{
 }
 #sql-table-delete{
-    background: #fff
+    background: #fff;
 }
 #sql-table-update{
-    background: #fff
+    background: #fff;
 }
 tr:nth-child(even){
     background: #ddd;

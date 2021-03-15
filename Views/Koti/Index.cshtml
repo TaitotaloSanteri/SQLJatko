@@ -30,9 +30,8 @@ else {
 } 
 
 <br />
-    <a asp-action="DeleteAll" class="btn btn-danger">DELETE ALL</a>
+    <a id="DeleteAll" asp-action="DeleteAll" class="btn btn-danger">DELETE ALL</a>
 <br />
-
 
 <h2>Tietojen suodatus</h2>
 
@@ -55,3 +54,15 @@ else {
 
     <button type="submit">Suodata</button>
 </form>
+
+<script type="text/javascript">
+    const deleteAll = document.getElementById("DeleteAll");
+    deleteAll.addEventListener("click", ConfirmDelete)
+
+    function ConfirmDelete() {
+        if (!confirm("Haluatko varmasti poistaa kaikki pelit tietokannasta?")) {
+            event.preventDefault();
+        }
+    }
+
+</script>

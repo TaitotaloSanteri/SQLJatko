@@ -2,7 +2,7 @@
 
 namespace SQLJatko.Migrations
 {
-    public partial class Game : Migration
+    public partial class Games : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
