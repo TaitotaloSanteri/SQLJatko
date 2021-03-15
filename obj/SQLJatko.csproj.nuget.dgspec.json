@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projektit2021\\SQLJatko\\SQLJatko.csproj": {}
+    "C:\\Projektit\\SQLJatko\\SQLJatko.csproj": {}
   },
   "projects": {
-    "D:\\Projektit2021\\SQLJatko\\SQLJatko.csproj": {
+    "C:\\Projektit\\SQLJatko\\SQLJatko.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projektit2021\\SQLJatko\\SQLJatko.csproj",
+        "projectUniqueName": "C:\\Projektit\\SQLJatko\\SQLJatko.csproj",
         "projectName": "SQLJatko",
-        "projectPath": "D:\\Projektit2021\\SQLJatko\\SQLJatko.csproj",
-        "packagesPath": "C:\\Users\\Samu\\.nuget\\packages\\",
-        "outputPath": "D:\\Projektit2021\\SQLJatko\\obj\\",
+        "projectPath": "C:\\Projektit\\SQLJatko\\SQLJatko.csproj",
+        "packagesPath": "C:\\Users\\Santeri\\.nuget\\packages\\",
+        "outputPath": "C:\\Projektit\\SQLJatko\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Samu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Santeri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -29,14 +29,15 @@ namespace SQLJatko.Models
 
     public enum Genre
     {
-        FPS,
+        FPS = 1,
         Strategy,
-        RPG
+        RPG,
+        Fighting
     }
 
     public enum Platform
     {
-        PC,
+        PC = 1,
         PS5,
         PS4,
         [Display(Name ="Xbox One")]

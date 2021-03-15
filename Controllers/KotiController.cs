@@ -22,10 +22,9 @@ namespace SQLJatko.Controllers
             db = _db;
         }
 
-        public IActionResult Index([FromQuery] string year)
+        public IActionResult Index()
         {
-            int yearFilter = year != null ? int.Parse(year) : 0;
-            List<Game> games = db.Games.Where(game => game.ReleaseYear > yearFilter).ToList();
+            List<Game> games = db.Games.ToList();
             return View(games);
         }
 
@@ -36,6 +35,36 @@ namespace SQLJatko.Controllers
         }
 
         [HttpPost]
+        public IActionResult IndexFilter(int minYear, int maxYear, string gameName, Genre gameGenre, Platform gamePlatform)
+        {
+            IEnumerable<Game> games = db.Games;
+
+            if (minYear > 0 && maxYear >= minYear)
+            {
+                games = games.Where(game => game.ReleaseYear >= minYear && game.ReleaseYear <= maxYear);
+            }
+
+            if (!String.IsNullOrEmpty(gameName))
+            {
+                games = games.Where(game => game.GameName.Contains(gameName));
+            }
+
+            if (gameGenre != 0)
+            {
+                games = games.Where(game => game.GameGenre == gameGenre);
+            }
+
+            if (gamePlatform != 0)
+            {
+                games = games.Where(game => game.GamePlatform == gamePlatform);
+            }
+
+            games = games.ToList();
+
+            return View("Index", games);
+        }
+
+        [HttpPost]
         public IActionResult Luo(Game game)
         {
             if (!ModelState.IsValid)
@@ -43,6 +72,15 @@ namespace SQLJatko.Controllers
                 return View("Luo");
             }
             db.Add(game);
+            db.SaveChanges();
+            return View("Success");
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            Game gameToDelete = db.Games.Find(id);
+            db.Games.Remove(gameToDelete);
             db.SaveChanges();
             return View("Success");
         }

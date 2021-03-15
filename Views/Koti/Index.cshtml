@@ -1,8 +1,48 @@
 ﻿@model List<SQLJatko.Models.Game>
 
 <h1>Pelit</h1>
-@foreach (Game game in Model)
-{
-    <p>@game.GameName @game.ReleaseYear @game.Description @game.GameGenre @game.GamePlatform </p>
+<table id="sql-table">
+    <tr id="sql-table-header">
+        <td>Pelin nimi</td>
+        <td>Julkaisuvuosi</td>
+        <td>Kuvaus</td>
+        <td>Tyyppi</td>
+        <td>Alusta</td>
+    </tr>
+    @foreach (Game game in Model)
+    {
+    <tr id="sql-table-entry">
+        <td>@game.GameName</td> 
+        <td>@game.ReleaseYear</td> 
+        <td>@game.Description</td> 
+        <td>@game.GameGenre</td> 
+        <td>@game.GamePlatform</td>
+        <td id="sql-table-update"><a asp-controller="Koti" asp-action="Update" asp-route-Id=@game.Id class="btn btn-primary">Update</a></td>
+        <td id="sql-table-delete"><a asp-controller="Koti" asp-action="Delete" asp-route-Id=@game.Id class="btn btn-danger">Delete</a></td>
+    </tr>
+    }
+</table>
+
+
+
+<h2>Tietojen suodatus</h2>
+
+<form method="post" asp-action="IndexFilter">
+    <label>Vuosi</label>
+    <input type="number" name="minYear" />
+    <label> - </label>
+    <input type="number" name="maxYear" />
+
+    <label>Nimi</label>
+    <input type="text" name="gameName" />
+
     <br />
-}
+
+    <label>Genre</label>
+    <select asp-items="Html.GetEnumSelectList<Genre>()" name="gameGenre"><option value=""></option></select>
+
+    <label>Platform</label>
+    <select asp-items="Html.GetEnumSelectList<Platform>()" name="gamePlatform"><option value=""></option></select>
+
+    <button type="submit">Suodata</button>
+</form>
