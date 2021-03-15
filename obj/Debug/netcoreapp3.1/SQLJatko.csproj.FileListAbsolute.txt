@@ -770,3 +770,9 @@ C:\Projektit\SQLJatko\obj\Debug\netcoreapp3.1\SQLJatko.pdb
 C:\Projektit\SQLJatko\obj\Debug\netcoreapp3.1\SQLJatko.genruntimeconfig.cache
 C:\Projektit\SQLJatko\obj\Debug\netcoreapp3.1\Razor\Views\Koti\Delete.cshtml.g.cs
 C:\Projektit\SQLJatko\obj\Debug\netcoreapp3.1\Razor\Views\Koti\Update.cshtml.g.cs
+C:\Projektit\SQLJatko\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Delete.cshtml.g.cs
+C:\Projektit\SQLJatko\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Index.cshtml.g.cs
+C:\Projektit\SQLJatko\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Luo.cshtml.g.cs
+C:\Projektit\SQLJatko\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Success.cshtml.g.cs
+C:\Projektit\SQLJatko\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Testi.cshtml.g.cs
+C:\Projektit\SQLJatko\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Update.cshtml.g.cs

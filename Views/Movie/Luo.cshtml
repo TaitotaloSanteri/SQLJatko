@@ -1,0 +1,23 @@
+﻿@model SQLJatko.Models.Movie
+
+<h1>Lisää uusi elokuva tietokantaan</h1>
+
+<form method="post" asp-action="Luo">
+    
+    <label asp-for="MovieName"></label>
+    <input asp-for="MovieName" />
+    <span asp-validation-for="MovieName" class="text-danger"></span>
+    <br />
+
+    <label asp-for="ReleaseYear"></label>
+    <input asp-for="ReleaseYear" />
+    <span asp-validation-for="ReleaseYear" class="text-danger"></span>
+    <br />
+    
+    <label asp-for="Description"></label>
+    <textarea asp-for="Description"></textarea>
+    <span asp-validation-for="Description" class="text-danger"></span>
+    <br />
+
+    <button type="submit">Lisää</button>
+</form>

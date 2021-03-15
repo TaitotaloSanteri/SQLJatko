@@ -15,5 +15,6 @@ namespace SQLJatko.Data
         }
 
         public DbSet<Game> Games { get; set; }
+        public DbSet<Movie> Movies { get; set; }
     }
 }
